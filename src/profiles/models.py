@@ -5,5 +5,5 @@ class Profile(models.Model):
     name = models.CharField(max_length=128)
     description = models.TextField(default='description default text')
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
