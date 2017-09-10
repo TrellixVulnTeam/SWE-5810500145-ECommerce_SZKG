@@ -4,6 +4,7 @@ from django.db import models
 class Profile(models.Model):
     name = models.CharField(max_length=128)
     description = models.TextField(default='description default text')
-
+    location = models.CharField(max_length=128,default='my location default text')
+    
     def __str__(self):
         return self.name
