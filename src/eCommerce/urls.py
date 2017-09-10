@@ -15,17 +15,18 @@ Including another URLconf
 """
 from django.conf import settings
 from django.conf.urls.static import static
-from django.conf.urls import url
+from django.conf.urls import url,include
 from django.contrib import admin
 from profiles import views as profiles_views
 from contact import views as contact_views
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # this url use in the home page
     url(r'^$',profiles_views.home, name='home'),
     url(r'^about/$',profiles_views.about, name='about'),
     url(r'^contact/$',contact_views.contact, name='contact'),
-    
+    url(r'^accounts/', include('allauth.urls')),
 ]
 
 if settings.DEBUG:
