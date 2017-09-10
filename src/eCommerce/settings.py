@@ -142,8 +142,7 @@ if DEBUG:
         os.path.join(os.path.dirname(BASE_DIR),"static","static"),
     ) 
 
-CRISPY_TEMPLATE_PACK = 'bootstrap3'
-SITE_ID = 1
+
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
@@ -172,3 +171,6 @@ ACCOUNT_USERNAME_REQUIRED = True
 ACCOUNT_PASSWORD_INPUT_RENDER_VALUE = False
 ACCOUNT_PASSWORD_MIN_LENGTH = 6
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
+SITE_ID = 1
