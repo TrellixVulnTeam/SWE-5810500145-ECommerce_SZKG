@@ -1,4 +1,49 @@
-h1{
-    color: #FF0000;
+body{
+    margin: 0;
+}
+li{
+    margin-left: -50px;
+    font-size: 20px;
+    height: 30px;
+    display:block;
+    border: 1px solid darkgrey;
     
+    
+}
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    left: 100px;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    
+    text-decoration: none;
+}
+
+/* Main content */
+.main {
+    text-align: center;
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+h1 {
+    margin: 2px;
+    padding: 2 px;
+    text-align: center;
+}
+#logo{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
 }
