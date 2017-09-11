@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'stripe',
+    'checkout',
 ]
 
 MIDDLEWARE = [
@@ -174,3 +176,11 @@ ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 SITE_ID = 1
+
+# stripe stuff
+
+
+# test keys
+STRIPE_PUBLISHABLE_KEY = 'pk_test_BCEKXcvLqq2OsD27CQXKsRS5'
+STRIPE_SECRET_KEY = 'sk_test_ZeyeEJdQxjocBtH7qGXjcsKV'
+

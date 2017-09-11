@@ -19,13 +19,15 @@ from django.conf.urls import url,include
 from django.contrib import admin
 from profiles import views as profiles_views
 from contact import views as contact_views
-
+from checkout import views as checkout_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # this url use in the home page
     url(r'^$',profiles_views.home, name='home'),
     url(r'^about/$',profiles_views.about, name='about'),
     url(r'^profile/$',profiles_views.userProfile, name='profile'),
+    url(r'^checkout/$',checkout_views.checkout, name='checkout'),
+    url(r'^checkout_complete/$',checkout_views.checkout, name='checkout_complete'),
     url(r'^contact/$',contact_views.contact, name='contact'),
     url(r'^accounts/', include('allauth.urls')),
 ]
