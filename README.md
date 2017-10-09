@@ -23,7 +23,7 @@ Free sites have a limited lifespan, It will be disabled on Monday 11 December 20
     stripe-1.65.0: https://stripe.com
     
     
-<br />Referance
+<br />Reference
 ***
     Youtube: https://www.youtube.com/watch?v=9Wbfk16jEOk&list=PLgEi5GZruX3xcK-BHPn1PmnxNu7A9dncC
     Github of pennersr: https://github.com/pennersr/django-allauth
